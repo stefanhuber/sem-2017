@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fhkue.tictactoe.MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Player: X"
+            android:textAlignment="center"
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Turn: 1"
+            android:textAlignment="center"
+            android:id="@+id/turn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/board"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_toStartOf="@+id/button5"
+        android:layout_above="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_alignStart="@+id/button5"
+        android:layout_above="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_toEndOf="@+id/button5"
+        android:layout_above="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_toStartOf="@+id/button5"
+        android:layout_alignTop="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_centerInParent="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_toEndOf="@+id/button5"
+        android:layout_alignTop="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_toStartOf="@+id/button5"
+        android:layout_below="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_alignStart="@+id/button5"
+        android:layout_below="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_toEndOf="@+id/button5"
+        android:layout_below="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:onClick="reset"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        android:text="Restart Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
