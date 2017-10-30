@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Task Master</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Save</string>
+
+    <string name="title_activity_task_detail">Task Details</string>
+
+    <string-array name="task_priorities">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+</resources>
